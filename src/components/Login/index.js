@@ -33,7 +33,7 @@ const Login = ({setUser}) => {
             <button className="registerButton" onClick={() => history.push("/register")}>Register</button>
             <form onSubmit={handleSubmit(onSubmit)}>
             <h1>Login</h1>
-                <input placeholder="Name" {...register("name")} required/>
+                <input placeholder="Nome do aluno" {...register("name")} required/>
                     <span>{errors.name?.message}</span> 
                 <input placeholder="RA (registro acadêmico)" type="number" {...register("ra")} required/>
                     <span>{errors.ra?.message}</span>
